@@ -21,7 +21,7 @@
     <div class="wrapper pad-t-1-2 pad-b-1-2 gutter-1-2">
       <h1 class="push-0">Shrubbery, etc.</h1>
     </div>
-    <nav class="nav" role="navigation">
+    <nav class="nav" role="navigation" id="nav">
       <div class="wrapper gutter-1-2">
         <ol class="mega list-group-inline push-0">
           <li><a href="#about">About</a></li>
@@ -34,7 +34,7 @@
     </nav>
   </header>
 
-  <main role="main">
+  <main role="main" id="main">
     <div class="about push" id="about">
       <div class="embed embed-24by10">
         <img class="embed-item" src="images/shrubs.jpg" alt="">
@@ -83,42 +83,41 @@
       <div class="wrapper gutter-1-2 push">
         <h2 class="push-0 color-brand-dark">Prices</h2>
         <span class="mega max-length">Even those who arrange and design shrubberies are under considerable economic stress at this period in history.</span>
+      </div>
+      <table class="gutter-2">
+        <caption>Prices for small, medium and large shrubberies.</caption>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th scope="col">Small</th>
+            <th scope="col">Medium</th>
+            <th scope="col">Large</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Grassy shrubs</th>
+            <td>$10</td>
+            <td>$20</td>
+            <td>$30</td>
+          </tr>
+          <tr>
+            <th scope="row">Shrubs with laurels</th>
+            <td>$40</td>
+            <td>$70</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <th scope="row">Two-level shrubbery</th>
+            <td>$50</td>
+            <td>$70</td>
+            <td>$90</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-        <table class="gutter-2">
-          <caption>Prices for small, medium and large shrubberies.</caption>
-          <thead>
-            <tr>
-              <th>&nbsp;</th>
-              <th scope="col">Small</th>
-              <th scope="col">Medium</th>
-              <th scope="col">Large</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Grassy shrubs</th>
-              <td>$10</td>
-              <td>$20</td>
-              <td>$30</td>
-            </tr>
-            <tr>
-              <th scope="row">Shrubs with laurels</th>
-              <td>$40</td>
-              <td>$70</td>
-              <td>$100</td>
-            </tr>
-            <tr>
-              <th scope="row">Two-level shrubbery</th>
-              <td>$50</td>
-              <td>$70</td>
-              <td>$90</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-
-    <div class="news pad-t pad-b" id="news">
+    <section class="news pad-t pad-b" id="news">
       <div class="wrapper gutter-1-2">
         <h3 class="push-0 color-brand-dark">News</h3>
         <p class="mega max-length">Then, when you have found the shrubbery, you must cut down the mightiest tree in the forest… with… a herring!</p>
@@ -126,15 +125,15 @@
         <ol class="list-group">
           <li class="push">
             <h3 class="push-0"><a href="#">What makes a good shrubbery?</a></h3>
-            <p class="push-0">A quick checklist for determining if a shrub is worthy of knighthood. <a href="#">Read&nbsp;more…</a></p>
+            <p class="push-0">A quick checklist for determining if a shrub is worthy of knighthood. <a href="#" aria-label="Read more about shrub checklists">Read&nbsp;more…</a></p>
           </li>
           <li class="push">
             <h3 class="push-0"><a href="#">Shrubbery recycling</a></h3>
-            <p class="push-0">I will come pick up your shrub and recycle it. Though why you’d want to get rid of a shrubbery I do not know. <a href="#">Read&nbsp;more…</a></p>
+            <p class="push-0">I will come pick up your shrub and recycle it. Though why you’d want to get rid of a shrubbery I do not know. <a href="#" aria-label="Read more about recycling shrubs">Read&nbsp;more…</a></p>
           </li>
           <li class="push">
             <h3 class="push-0"><a href="#">Greens of any kind!</a></h3>
-            <p class="push-0">I now sell and plant more than just shrubs! Greens of any kind: lettuce, kale, onions, grasses, trees, etc. <a href="#">Read&nbsp;more…</a></p>
+            <p class="push-0">I now sell and plant more than just shrubs! Greens of any kind: lettuce, kale, onions, grasses, trees, etc. <a href="#" aria-label="Read more about selling and planting shrubs">Read&nbsp;more…</a></p>
           </li>
         </ol>
       </div>
@@ -151,7 +150,7 @@
             <input id="name">
           </div>
           <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] push gutter-1-2">
-            <label for="email"class="push-1-8">E-mail address</span>
+            <label for="email" class="push-1-8">E-mail address</label>
             <input type="email" id="email">
           </div>
           <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] push gutter-1-2">
